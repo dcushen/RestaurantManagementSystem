@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mdm.restaurantmanagementsystem.NewMenuItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <!-- Item Id -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Item ID"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <!-- ID field -->
+                <EditText
+                    android:id="@+id/item_id"
+                    android:hint="Item ID"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Category"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Name"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/item_name"
+                    android:hint="Item name"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Ingredients -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Ingredients"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/item_ingredients"
+                    android:hint="Ingredients"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    style="@style/EditorFieldStyle" />
+
+                <!--Search icon that leads to ingredients list options-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_ingredients"
+                    android:onClick="IngredientsIntent"
+                    android:contentDescription="Ingredients Button" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Allergy's -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Allergy's"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/item_allergys"
+                    android:hint="Allergy's"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Vegan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Vegan"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioVegan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes" />
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Vegetarian -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Vegetarian"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioVegetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes" />
+                    <RadioButton
+                        android:id="@+id/radioNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Cal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Cal"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/item_cal"
+                    android:hint="213 cal"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Spicy Level -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Spicy Level"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/levelZero"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:background="@android:color/transparent"/>
+
+                <Button
+                    android:id="@+id/levelOne"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one"
+                    android:textColor="@color/levelOne"
+                    android:background="@android:color/transparent"/>
+
+                <Button
+                    android:id="@+id/levelTwo"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two"
+                    android:textColor="@color/levelTwo"
+                    android:background="@android:color/transparent"/>
+
+                <Button
+                    android:id="@+id/levelThree"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/three"
+                    android:textColor="@color/levelThree"
+                    android:background="@android:color/transparent"/>
+
+                <Button
+                    android:id="@+id/levelFour"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/four"
+                    android:textColor="@color/levelFour"
+                    android:background="@android:color/transparent"/>
+
+                <Button
+                    android:id="@+id/levelFive"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/five"
+                    android:textColor="@color/levelFive"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Servings -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Servings"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/item_servings"
+                    android:hint="2"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Price"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/item_price"
+                    android:hint="3.50"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Add new Item Button -->
+        <Button
+            android:id="@+id/newItemBT"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_new_item"
+            android:onClick="retrieveNewItemInfo"/>
+
+    </LinearLayout>
+</ScrollView>

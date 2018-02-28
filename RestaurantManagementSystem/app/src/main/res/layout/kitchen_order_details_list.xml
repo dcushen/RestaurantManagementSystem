@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/tvItemId"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="Item Id"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:padding="5dp"
+        tools:text="Name"/>
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        tools:text="Quantity"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        tools:text="Price"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:padding="5dp"
+        tools:text="Status"/>
+
+    <ImageView
+        android:id="@+id/tickImage"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/ic_black_tick"
+        android:visibility="invisible"
+        android:contentDescription="black tick" />
+
+</LinearLayout>

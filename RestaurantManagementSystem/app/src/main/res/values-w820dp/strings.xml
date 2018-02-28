@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kitchen_dashboard">Kitchen Dashboard</string>
+    <string name="add_new_item">Add new Item</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="login_image_logo">Login Image Logo</string>
+    <string name="order_delivered">Order delivered</string>
+    <string name="notes_heading">Notes</string>
+    <string name="create_a_new_note">Creare a new note</string>
+    <string name="roster">Roster</string>
+    <string name="dashboard_reservations">Reservations</string>
+</resources>

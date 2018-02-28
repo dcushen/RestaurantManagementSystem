@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat android:orientation="vertical" android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.mdm.restaurantmanagementsystem.ReservationsActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:onClick="newBooking"
+        android:text="Add Booking"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
+        android:onClick="deleteBook"
+        android:text="Delete Booking"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:onClick="viewBook"
+        android:text="View"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Bookings"
+        tools:layout_editor_absoluteY="54dp"
+        android:layout_marginRight="-1dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.v7.widget.LinearLayoutCompat>

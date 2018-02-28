@@ -1,0 +1,77 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mdm.restaurantmanagementsystem.EditNoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <!-- Note title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:text="Title"
+                style="@style/NewNoteStyle" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etNoteTitle"
+                    android:ems="10"
+                    android:hint="Note name"
+                    style="@style/EditorFieldStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Note content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:text="Note"
+                style="@style/NewNoteStyle"/>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingStart="4dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:hint="Note content"
+                    android:id="@+id/etNoteContent"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    style="@style/EditorFieldStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Note save button -->
+        <Button
+            android:id="@+id/btSave"
+            android:text="save"
+            android:onClick="updateNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>

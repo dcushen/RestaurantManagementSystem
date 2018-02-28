@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mdm.restaurantmanagementsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_black"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".WaitersOrdersService"
+            android:exported="false" /> <!-- exported determines whether the service can be executed by other applications -->
+
+        <activity android:name=".WaitersDashboardActivity" />
+        <activity android:name=".WaitersMenuActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".ClockActivity" />
+        <activity android:name=".OrdersListActivity" />
+        <activity android:name=".OrderDetailActivity" />
+        <activity android:name=".KitchenDashboardActivity" />
+        <activity android:name=".KitchenMenuActivity" />
+        <activity android:name=".KitchenOrdersActivity" />
+        <activity android:name=".NewMenuItemActivity" />
+        <activity android:name=".EditMenuItemActivity" />
+        <activity android:name=".IngredientsActivity" />
+        <activity android:name=".KitchenOrderDetailsActivity" />
+        <activity android:name=".EditNoteActivity" />
+        <activity android:name=".NewNoteActivity" />
+        <activity android:name=".ManagementDashboardActivity" />
+        <activity android:name=".ManagementMenuActivity" />
+        <activity android:name=".ManagementRosterActivity" />
+        <activity android:name=".NewRosterActivity" />
+        <activity android:name=".NewRosterEntryActivity" />
+        <activity android:name=".WaitersRosterActivity" />
+        <activity android:name=".NotesActivity" />
+        <activity android:name=".HostDashboardActivity" />
+        <activity android:name=".ReservationsActivity" />
+        <activity android:name=".CreateBookingActivity"/>
+    </application>
+
+</manifest>

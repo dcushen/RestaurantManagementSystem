@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">RMS</string>
+
+    <string name="hint_employeeId">Employee Id</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="dashboard_menu">Menu</string>
+    <string name="dashboard_orders">Orders</string>
+    <string name="dashboard_clockin">Clock-In/Clock-Out</string>
+    <string name="dashboard_roster">Roster</string>
+    <string name="dashboard_notes">Notes</string>
+    <string name="menu_new_item">New Menu Item</string>
+
+    <string name="menu_heading">Menu</string>
+    <string name="order_heading">Order</string>
+    <string name="server_name_heading">Server Name:</string>
+    <string name="server_name">Alice C.</string>
+    <string name="table_no_heading">Table:</string>
+    <string name="order_textview_total">Total:</string>
+    <string name="order_button_text">Submit order</string>
+    <string name="total_price_string">$23.00</string>
+    <string name="text_sign_out">Sign Out</string>
+    <string name="kitchen_dashboard">Kitchen Dashboard</string>
+    <string name="add_new_item">Add new Item</string>
+
+    <string-array name="tables_array">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>Starters</item>
+        <item>Salad</item>
+        <item>Burgers</item>
+        <item>Pasta</item>
+        <item>Dessert</item>
+        <item>Soft Drinks</item>
+    </string-array>
+
+    <string name="radio_yes">Yes</string>
+    <string name="radio_No">No</string>
+    <string name="tvVegan">Vegan:</string>
+    <string name="tvVegetarian">Vegetarian</string>
+    <string name="edit_item">Edit Item</string>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="login_image_logo">Login Image Logo</string>
+    <string name="order_delivered">Order delivered</string>
+
+    <string name="kg">g</string>
+    <string name="done">Done</string>
+    <string name="notes_heading">Notes</string>
+    <string name="create_a_new_note">Create a new note</string>
+    <string name="roster">Roster</string>
+    <string name="dashboard_reservations">Reservations</string>
+
+    <string-array name="time">
+        <item value="00:00:00">00:00</item>
+        <item value="01:00:00">01:00</item>
+        <item value="02:00:00">02:00</item>
+        <item value="03:00:00">03:00</item>
+        <item value="04:00:00">04:00</item>
+        <item value="05:00:00">05:00</item>
+        <item value="06:00:00">06:00</item>
+        <item value="07:00:00">07:00</item>
+        <item value="08:00:00">08:00</item>
+        <item value="09:00:00">09:00</item>
+        <item value="10:00:00">10:00</item>
+        <item value="11:00:00">11:00</item>
+        <item value="12:00:00">12:00</item>
+        <item value="13:00:00">13:00</item>
+        <item value="14:00:00">14:00</item>
+        <item value="15:00:00">15:00</item>
+        <item value="16:00:00">16:00</item>
+        <item value="17:00:00">17:00</item>
+        <item value="18:00:00">18:00</item>
+        <item value="19:00:00">19:00</item>
+        <item value="20:00:00">20:00</item>
+        <item value="21:00:00">21:00</item>
+        <item value="22:00:00">22:00</item>
+        <item value="23:00:00">23:00</item>
+    </string-array>
+</resources>
